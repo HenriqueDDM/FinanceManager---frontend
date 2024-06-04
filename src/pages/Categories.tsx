@@ -1,7 +1,7 @@
 import { FC } from "react";
 
 const Categories: FC = () => {
-  return <div>:FC</div>;
+  return <div>Categories</div>;
 };
 
 export default Categories;
