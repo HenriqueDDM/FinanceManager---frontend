@@ -49,7 +49,7 @@ const Categories: FC = () => {
   return (
     <>
       <div className="mt-10 p-4 rounded-md bg-slate-800">
-        <h1> Your category list:</h1>
+        <h1> Sua lista de categoria:</h1>
         {/*Category List */}
         <div className="mt-2 flex flex-wrap items-center gap-2">
           {categories.map((category, idx) => (
@@ -84,7 +84,7 @@ const Categories: FC = () => {
           className="mt-5 flex max-w-fit items-center gap-2 text-white/50 hover:text-white"
         >
           <FaPlus />
-          <span>Create a new Category</span>
+          <span>Cria uma nova Categoria</span>
         </button>
       </div>
 

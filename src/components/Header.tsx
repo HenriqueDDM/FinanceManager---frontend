@@ -45,7 +45,7 @@ const Header: FC = () => {
                   isActive ? "text-white" : "text-white/50"
                 }
               >
-                Categories
+                Categorias
               </NavLink>
             </li>
             <li>
@@ -55,7 +55,7 @@ const Header: FC = () => {
                   isActive ? "text-white" : "text-white/50"
                 }
               >
-                Transactions
+                Transações
               </NavLink>
             </li>
           </ul>

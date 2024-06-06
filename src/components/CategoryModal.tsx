@@ -17,25 +17,25 @@ const CategoryModal: FC<ICategoryModal> = ({ type, id, setVisibleModal }) => {
         className="grid gap-2 w-[300px] rounded-b-md bg-slate-900 p-5"
       >
         <label htmlFor="title">
-          <small>Category Title</small>
+          <small>Título Categoria</small>
           <input
             className="input w-full"
             type="text"
             name="title"
-            placeholder="Title..."
+            placeholder="Título..."
           />
           <input type="hidden" name="id" value={id} />
         </label>
 
         <div className="flex items-center gap-2">
           <button className="btn btn-green" type="submit">
-            {type === "patch" ? "Save" : "Create"}
+            {type === "patch" ? "Salvar" : "Criar"}
           </button>
           <button
             onClick={() => setVisibleModal(false)}
             className="btn btn-red"
           >
-            Close
+            Fechar
           </button>
         </div>
       </Form>

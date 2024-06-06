@@ -24,11 +24,24 @@ export interface IResponseUserData {
 export interface ICategory {
   title: string;
   id: string;
-  createdAt: string;
-  updatedAt: string;
-  transactions: [];
+  created_at: string;
+  updated_at: string;
+  transactions?: [];
 }
 
-export interface IResponseTransactionLoader{
-  categories: ICategory[]
+export interface ITransaction {
+  amount: number;
+  created_at: string;
+  updated_at: string;
+  type: string;
+  title: string;
+  id: string;
+  category: ICategory;
+}
+
+export interface IResponseTransactionLoader {
+  categories: ICategory[];
+  transactions: ITransaction[];
+  totalIncome: number;
+  totalExpense: number;
 }
