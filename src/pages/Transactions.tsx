@@ -28,6 +28,7 @@ export const transactionLoader = async () => {
   return data;
 };
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 export const transactionAction = async ({ request }: any) => {
   switch (request.method) {
     case "POST": {

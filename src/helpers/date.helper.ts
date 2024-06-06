@@ -1,12 +1,11 @@
 const formatDate = (dateString: string): string => {
-    const date = new Date(dateString)
-    const options = {
-      year: "numeric",
-      month: "long",
-      day: "numeric",
-    };
-    return date.toLocaleDateString("pt-BR", options);
+  const date = new Date(dateString);
+  const options: Intl.DateTimeFormatOptions = {
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit",
   };
-  
-  export default formatDate;
-  
+  return date.toLocaleDateString("pt-BR", options);
+};
+
+export default formatDate;
